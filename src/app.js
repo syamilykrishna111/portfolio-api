@@ -4,7 +4,9 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000",
+        "https://portfolio-web-admin.vercel.app/"
+    ]
   }));
 app.use(express.json());
 
