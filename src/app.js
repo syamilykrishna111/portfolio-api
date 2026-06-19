@@ -9,6 +9,7 @@ app.use(
       "http://localhost:3000",
       "https://portfolio-web-admin.vercel.app",
     ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
