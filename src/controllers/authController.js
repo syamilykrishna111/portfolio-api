@@ -49,7 +49,7 @@ const login = async (req, res) => {
 
     // Find user
     const user = await Admin.findOne({ email });
-
+console.log(user);
     if (!user) {
       return res.status(401).json({
         success: false,
